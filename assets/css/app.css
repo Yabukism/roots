@@ -3,13 +3,14 @@
    Base
    ========================================================================== */
 
-body { color: #34495e; font-family: "Roboto", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; padding-top: 80px; }
+body { color: #34495e; font-family: "Roboto", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
 a { color: #16a085; text-decoration: none; -webkit-transition: 0.25s; -moz-transition: 0.25s; -o-transition: 0.25s; transition: 0.25s; -webkit-backface-visibility: hidden; }
 a:hover { color: #1abc9c; text-decoration: none; }
 li { margin-bottom: .5em; }
 hr { clear: both; }
 h1, h2, h3, h4, h5, h6, div, p { word-wrap: break-word; }
 figure { max-width: 100%; }
+
 /* =============================================================================
    Header
    ========================================================================== */
@@ -28,7 +29,7 @@ figure { max-width: 100%; }
 .format-link { background: #F8F8F8; padding: 1em; border: 1px solid #e8e8e8; -moz-border-radius: 8px; -webkit-border-radius: 8px; -o-border-radius: 8px; -ms-border-radius: 8px; }
 .format-link .entry-title a { color: #999; }
 .format-link .entry-title a:hover { color: #34495e; }
-.format-link .post-header, .format-link .thumb_left, .format-quote .thumb_left { display: none; }
+/*.format-link .post-header, .format-link .span6, .format-quote .span6 { display: none; }*/
 .format-link p { text-align: right; }
 .single-format-link .format-link { background: none; border: none; }
 .format-video .entry-content-asset { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em; }
@@ -101,7 +102,10 @@ figure { max-width: 100%; }
 .post-meta { margin-bottom: 5px; }
 .post-meta a { color: #999; font-size: 13px; text-decoration: none; }
 .post-meta > div { float: left; margin-right: 1em; line-height: 15px; }
+.post-meta .more { float: right;}
 .post-meta i, .post-category i, .post-tags i { margin-right: 5px; font-size: 14px; }
+.more {text-align: right;}
+.more i {margin-left: 5px; font-size: 14px; color: #16a085;}
 .post-date { font-size: 13px; }
 .post a { transition: 500ms; text-decoration: none; }
 .single-pagination { margin: 20px 0px; padding: 10px 0px; border-top: 1px #e1e1e1 dashed; border-bottom: 1px #e1e1e1 dashed; }
@@ -148,7 +152,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 .sticky {padding: 1em; border: 1px solid #DDD; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075); margin-bottom: 20px; box-sizing: border-box; }
 .gallery-caption { }
 .bypostauthor { }
-.thumb_left { float: left; margin: 0 20px 0 0; }
+
 img:hover { opacity: .5; }
 .thumbnail { box-sizing: border-box; }
 /* ==========================================================================
@@ -178,7 +182,7 @@ input[type="submit"].btn { float: right; margin-right: 10%; }
 /* Body and structure
 -------------------------------------------------- */
 
-body { position: relative; padding-top: 40px; }
+body { position: relative;}
 /* Code in headings */
 h3 code { font-size: 14px; font-weight: normal; }
 /* Tweak navbar brand link to be super sleek
